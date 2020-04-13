@@ -18,7 +18,7 @@ except:
   print('Usage:', os.path.basename(sys.argv[0]), '''N
   
   N - number of entries to be randomly selected from all PDB entries.
-  Output written to stdout.''', file=sys.stderr)
+  Output written to stdout.''', file=sys.stdout)
   sys.exit(1)
 
 # Get index file
