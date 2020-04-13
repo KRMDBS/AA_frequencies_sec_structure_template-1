@@ -11,7 +11,7 @@ try:
 except:
   print('Usage:', os.path.basename(sys.argv[0]), '''FILE
   
-  FILE - text file with entries to be downloaded from PDB.''', file=sys.stderr)
+  FILE - text file with entries to be downloaded from PDB.''', file=sys.stdout)
   sys.exit(1)
 
 # Get data files
@@ -28,4 +28,4 @@ with open(FILE) as fin:
       counter += 1
 
 # Problem: some structures might not exist ("Desired structure doesn't exists")
-print(f'---\nDownloaded {counter} entries from PDB.', file=sys.stderr)
+print(f'---\nDownloaded {counter} entries from PDB.', file=sys.stdout)
