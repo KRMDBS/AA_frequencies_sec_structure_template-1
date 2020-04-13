@@ -18,7 +18,7 @@ except:
   print('Usage:', os.path.basename(sys.argv[0]), '''N
   
   N - number of entries to be randomly selected from all PDB entries.
-  Output written to stdout.''', file=sys.stdout)
+  Output written to stdout.''', file=sys.stderr)
   sys.exit(1)
 
 # Get index file
@@ -32,7 +32,7 @@ print(f"Randomly selected %d entries from {len(all_entries)} entries." % DATASIZ
 
 # Write results to stdout
 for entry in selected:
-  print(entry, file=sys.stderr)
+  print(entry, file=sys.stdout)
 
 # Get data files
 #for entry in selected:
