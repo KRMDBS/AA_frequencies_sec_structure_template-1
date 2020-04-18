@@ -2,3 +2,64 @@
 
 TODO:
 - There is a bug in the first step, 01_download, files are not being downloaded
+
+Proteins are made up of smaller building blocks called amino acids, joined together in chains. There are 20 different amino acids. Some
+proteins are just a few amino acids long, while others are made up of several thousands. These chains of amino acids fold up in complex
+ways, giving each protein a unique 3D shape. The two most common secondary structural elements are alpha helices and beta sheets, though
+others occur as well. Amino acids vary in their ability to form the various secondary structure elements.
+
+Goal of this project is to determine the relative frequencies of the constituent amino acids for each protein secondary structural class.
+
+Requirements:
+Tools
+Libraries
+Databases
+Tools to download the 
+Biopython is needed
+
+Input data:
+The input data are pdb-files available in the pdb database: https://www.rcsb.org/search/browse/atc
+
+Required steps to process the data:
+It is necessary to obtain a defined or undefined amount of pdb-files of different proteins.
+The files have to be parsed to get the relevant information (which amino acids are present in which secondary structure)
+These information have to be analyzed and the relevant numbers (content of several amino acids in different secondary structures)
+have to be calculated. The results of the calculations have to be output to a human-readable file format and visualized as bar charts,
+where the different amino acids are shown connected to the secondary structural elements alpha helices, beta sheets and "irregular" 
+for any amino acid not within a helix or sheet.
+
+- Milestone 1: Collect necessary information
+	WP 1: Learn about PDB database -> 1 hour
+		The Protein Data Bank (PDB) is a database for the three-dimensional structural data of large biological molecules, such as
+		proteins and nucleic acids. The data, typically obtained by X-ray crystallography, NMR spectroscopy, or cryoelectron 
+		microscopy, and submitted by biologists and biochemists from around the world, are freely accessible on the Internet via the
+		websites of its member organisations. The PDB is overseen by an organisation called the Worldwide Protein Data Bank, wwPDB.
+		The PDB database is updated weekly, along with its holdings list. (https://en.wikipedia.org/wiki/Protein_Data_Bank)
+	WP 2: Learn about pdb file format -> 3 hours
+		The file format initially used by the PDB was called PDB file format.
+	WP 3: ... -> 2 hours
+
+- Milestone 2: Select and download the protein structure files from PDB
+	-> Deliverale(s): Folder with PDB files
+	-> Required Python scripts:
+		-Python script 1, "do something
+			input =
+			output =
+			-> x hours
+		-Python script 2, "fdgghetg
+			input =
+			output = 
+			-> x hours
+		-Python script 3, "fgdfköghg
+			input =
+			output =
+			-> x hours
+- Milestone 3: Parse the PDB files and calculate the frequency of amino acids in each secondary structure
+	-> Deliverable(s): File with calcuated results
+	-> Required Python scripts:
+		-Python script 4, "dfgöghg
+			input =
+			output =
+			-> x hours
+- Milestone 4: Visualize the results of the calculation
+	-> Deliverable(s): File with visualization chart
