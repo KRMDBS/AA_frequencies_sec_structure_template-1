@@ -1,4 +1,4 @@
-#!/usr/bin/bash env
+#!/usr/bin/env bash
 
 # Setup (create required folder structure and symlinks)
 mkdir -p data results tmpdata
@@ -13,15 +13,15 @@ cd data
 #for F in ./*gz; do
 #  gunzip -c $F > ../tmpdata/${F%%.gz}
 #done
-
 for F in ../../01_*/results/*ent; do
   ln -s $F
+  echo $F
 done
+
 
 cd ..
 
 # Do stuff
 
 # Note: to run compiled *.pyc scripts, you need to call them like this: e.g.
-#python ../bin/parse_pdb_files.cpython-37.pyc
-
+python ../bin/parse_pdb_files.cpython-37.pyc ../01_*/results/
