@@ -73,4 +73,5 @@ the x-axis and
 		-Bash run script to create folder structure and execute plot-script
 
 # Results
-The multibar chart will show that the distribution of the several amino acids differs in the secondary structural classes of helix, sheet and other.
+The multibar chart will show that the distribution of the several amino acids differ in the secondary structural classes of helix, sheet and "other".
+Amino acids vary in their ability to form the various secondary structure elements. (https://en.wikipedia.org/wiki/Protein_secondary_structure)
