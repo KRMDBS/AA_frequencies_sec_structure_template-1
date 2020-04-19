@@ -4,7 +4,9 @@ Goal of this project is to determine the relative frequencies of the constituent
 
 # This was our approach
 
-(Short approach description here)
+The information of the different protein secondary structural classes are provided in pdb-files within the Protein Database (PDB). A set of 100 protein
+structures from the PDB will be parsed to calculate the relative frequencies of the constituent amino acids in different protein secondary structures
+(helix, sheet, others). The results will be visualized in a multibar chart
 
 # Installation/usage instructions
 
