@@ -6,7 +6,7 @@
 mkdir -p data results
 rm -rf data/* results/* 
 
-# copy results to data 
+# copy results of calculation to data 
 cp ../02_*/results/result.table data
 
 # execute script (use result.table as input)

@@ -1,8 +1,5 @@
 # All important notes, planning steps, interpretation of results...
 
-TODO:
-- There is a bug in the first step, 01_download, files are not being downloaded
-
 Proteins are made up of smaller building blocks called amino acids, joined together in chains. There are 20 different amino acids. Some
 proteins are just a few amino acids long, while others are made up of several thousands. These chains of amino acids fold up in complex
 ways, giving each protein a unique 3D shape. The two most common secondary structural elements are alpha helices and beta sheets, though
@@ -10,10 +7,12 @@ others occur as well. Amino acids vary in their ability to form the various seco
 
 Goal of this project is to determine the relative frequencies of the constituent amino acids for each protein secondary structural class.
 
+###########################################################################################################################################
+
 Requirements:
 Tools
-Libraries
-Databases
+Libraries (Matplotlib, Pandas, NumPy)
+Databases (PDB)
 Tools to download the 
 Biopython is needed
 
@@ -26,7 +25,8 @@ The files have to be parsed to get the relevant information (which amino acids a
 These information have to be analyzed and the relevant numbers (content of several amino acids in different secondary structures)
 have to be calculated. The results of the calculations have to be output to a human-readable file format and visualized as bar charts,
 where the different amino acids are shown connected to the secondary structural elements alpha helices, beta sheets and "irregular" 
-for any amino acid not within a helix or sheet.
+for any amino acid not within a helix or sheet. The bar chart will visualize the several amino acids (given with their abbreviation code) on
+the x-axis and 
 
 - Milestone 1: Collect necessary information
 	WP 1: Learn about PDB database -> 1 hour
@@ -42,24 +42,31 @@ for any amino acid not within a helix or sheet.
 - Milestone 2: Select and download the protein structure files from PDB
 	-> Deliverale(s): Folder with PDB files
 	-> Required Python scripts:
-		-Python script 1, "do something
-			input =
-			output =
-			-> x hours
-		-Python script 2, "fdgghetg
-			input =
-			output = 
-			-> x hours
-		-Python script 3, "fgdfköghg
-			input =
-			output =
-			-> x hours
+		-Python script 1, "Select pdb files from PDB"
+			input = 
+			output = pdb_selection.txt (text file with randomly selected names of pdb files)
+			-> 2 hours
+		-Python script 2, "Download from PDB"
+			input = pdb_selection.txt (names of files which have to be downloaded)
+			output = pdbxxxx.ent files in results folder
+			-> 2 hours
+		-Bash run script to select number of downloaded files and execution of selection and download from database
+			-> 1 hour
+
 - Milestone 3: Parse the PDB files and calculate the frequency of amino acids in each secondary structure
-	-> Deliverable(s): File with calcuated results
+	-> Deliverable(s): File with calcuated results (*.txt)
 	-> Required Python scripts:
-		-Python script 4, "dfgöghg
-			input =
-			output =
-			-> x hours
+		-Python script 3, "Parse pdb files"
+			input = directory with files
+			output = tab separated calculations (result.table)
+			-> 2 hours
+		-Bash run script to execute parse-script and write results to tab separated file
+			-> 1 hour
+		
 - Milestone 4: Visualize the results of the calculation
-	-> Deliverable(s): File with visualization chart
+	-> Deliverable(s): File with visualization chart (multibar chart)
+	-> Required Python scripts:
+		-Python script 4, "Plot multibar"
+			input = result.table
+			output = pdf.file (AA_frequencies)
+		-Bash run script to create folder structure and execute plot-script
