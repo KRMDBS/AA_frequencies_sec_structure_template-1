@@ -10,11 +10,10 @@ Goal of this project is to determine the relative frequencies of the constituent
 ###########################################################################################################################################
 
 Requirements:
-Tools
+Tools (Biopython)
 Libraries (Matplotlib, Pandas, NumPy)
 Databases (PDB)
-Tools to download the 
-Biopython is needed
+Biopython and the import of Bio.PDB is needed to download pdb files from PDB
 
 Input data:
 The input data are pdb-files available in the pdb database: https://www.rcsb.org/search/browse/atc
@@ -36,8 +35,10 @@ the x-axis and
 		websites of its member organisations. The PDB is overseen by an organisation called the Worldwide Protein Data Bank, wwPDB.
 		The PDB database is updated weekly, along with its holdings list. (https://en.wikipedia.org/wiki/Protein_Data_Bank)
 	WP 2: Learn about pdb file format -> 3 hours
-		The file format initially used by the PDB was called PDB file format.
-	WP 3: ... -> 2 hours
+		The file format initially used by the PDB was called PDB file format. The archival PDB files will be distributed with the
+		reserved conventional names, in the form pdbentry_id.ent, where entry_id is a PDB 4-letter code, e.g. pdb1abc.ent 
+		(https://www.wwpdb.org/about/faq).
+	WP 3: Create whole project structure with all necessary information -> 3 hours
 
 - Milestone 2: Select and download the protein structure files from PDB
 	-> Deliverale(s): Folder with PDB files
