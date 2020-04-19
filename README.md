@@ -23,6 +23,6 @@ The environment is also provided as `requirements.txt` file (please provide this
 After cloning the repo, enter each numbered directory successively (01_..., 02_..., etc.) and execute the Bash driver scripts to reproduce the results.
 
 # Possibly more relevant information?
-
+After executing all steps successfully there will be results-folders in each numbered directory. The final visualization of the amino acid distribution
 ---
 Project authors: Katja Ruediger
