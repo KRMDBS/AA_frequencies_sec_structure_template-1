@@ -71,3 +71,6 @@ the x-axis and
 			input = result.table
 			output = pdf.file (AA_frequencies)
 		-Bash run script to create folder structure and execute plot-script
+
+# Results
+The multibar chart will show that the distribution of the several amino acids differs in the secondary structural classes of helix, sheet and other.
