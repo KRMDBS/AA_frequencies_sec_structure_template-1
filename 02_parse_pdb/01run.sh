@@ -15,7 +15,6 @@ cd data
 #done
 for F in ../../01_*/results/*ent; do
   ln -s $F
-  echo $F
 done
 
 
@@ -24,4 +23,6 @@ cd ..
 # Do stuff
 
 # Note: to run compiled *.pyc scripts, you need to call them like this: e.g.
-python ../bin/parse_pdb_files.cpython-37.pyc ../01_*/results/
+python ../bin/parse_pdb_files.cpython-37.pyc data/ > results/result.table
+
+
