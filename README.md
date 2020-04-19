@@ -1,7 +1,6 @@
 # Short description
 
-(Short project description here)
-Goal of this project is to determine the relative frequencies of the constituent amino acids for each protein secondary structural class.
+Goal of this project is to determine the relative frequencies of the constituent amino acids for three different protein secondary structural classes.
 
 # This was our approach
 
@@ -23,6 +22,7 @@ The environment is also provided as `requirements.txt` file (please provide this
 After cloning the repo, enter each numbered directory successively (01_..., 02_..., etc.) and execute the Bash driver scripts to reproduce the results.
 
 # Possibly more relevant information?
-After executing all steps successfully there will be results-folders in each numbered directory. The final visualization of the amino acid distribution
+After executing all steps successfully there will be results-folders in each numbered directory. The final visualization of the several amino acids in the
+different secondary structures will be located in the results-folder of directory 03_visualize
 ---
 Project authors: Katja Ruediger
